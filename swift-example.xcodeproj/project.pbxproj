@@ -15,6 +15,9 @@
 		5195ABC426832EA300801725 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5195AB9926832EA100801725 /* ContentView.swift */; };
 		5195ABC526832EA300801725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5195AB9A26832EA300801725 /* Assets.xcassets */; };
 		5195ABC626832EA300801725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5195AB9A26832EA300801725 /* Assets.xcassets */; };
+		51B0092F26837A1A00F248DC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B0092E26837A1A00F248DC /* SwiftUI.framework */; };
+		51B0093126837CFD00F248DC /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0093026837CFD00F248DC /* ContactView.swift */; };
+		51B009352683868700F248DC /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B009342683868700F248DC /* ControllerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		5195ABBA26832EA300801725 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5195ABBE26832EA300801725 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		5195ABC026832EA300801725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B0092E26837A1A00F248DC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		51B0093026837CFD00F248DC /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		51B009342683868700F248DC /* ControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51B0092F26837A1A00F248DC /* SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +99,7 @@
 				5195ABB226832EA300801725 /* Tests iOS */,
 				5195ABBD26832EA300801725 /* Tests macOS */,
 				5195ABA026832EA300801725 /* Products */,
+				51B0092D26837A1A00F248DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +108,8 @@
 			children = (
 				5195AB9826832EA100801725 /* swift_exampleApp.swift */,
 				5195AB9926832EA100801725 /* ContentView.swift */,
+				51B009342683868700F248DC /* ControllerView.swift */,
+				51B0093026837CFD00F248DC /* ContactView.swift */,
 				5195AB9A26832EA300801725 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -149,6 +159,14 @@
 				5195ABC026832EA300801725 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		51B0092D26837A1A00F248DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51B0092E26837A1A00F248DC /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +327,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5195ABC326832EA300801725 /* ContentView.swift in Sources */,
+				51B0093126837CFD00F248DC /* ContactView.swift in Sources */,
+				51B009352683868700F248DC /* ControllerView.swift in Sources */,
 				5195ABC126832EA300801725 /* swift_exampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
