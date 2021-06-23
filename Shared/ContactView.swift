@@ -10,8 +10,13 @@ import SwiftUI
 struct ContactView: View {
     var contact: Contact
     var body: some View {
-        Text(contact.firstname)
-        Text(contact.lastname)
+        NavigationLink(
+            destination: ContactList(),
+            label: {
+                Text(contact.firstname)
+                Text(contact.lastname)
+            })
+        
     }
 }
 
